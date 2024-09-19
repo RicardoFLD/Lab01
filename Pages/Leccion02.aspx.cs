@@ -69,6 +69,7 @@ namespace Lab01.Pages
                         _ => ""
                     };
 
+
                     txtResultado.Text = dia;
                 }
             }
