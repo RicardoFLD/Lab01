@@ -45,10 +45,14 @@ namespace Lab01.Pages
 
         protected void btnEval2_Click(object sender, EventArgs e)
         {
+
+            // Declarar variable para el número ingresado
             int numero;
 
+            // Intentar convertir el valor del TextBox a entero
             bool esNumeroValido = int.TryParse(txtNum3.Text, out numero);
 
+            // Evaluar el número
             if (esNumeroValido)
             {
                 if (numero < 1 || numero > 7)
@@ -57,18 +61,33 @@ namespace Lab01.Pages
                 }
                 else
                 {
-                    string dia = numero switch
-                    {
-                        1 => "Lunes",
-                        2 => "Martes",
-                        3 => "Miércoles",
-                        4 => "Jueves",
-                        5 => "Viernes",
-                        6 => "Sábado",
-                        7 => "Domingo",
-                        _ => ""
-                    };
+                    string dia = ""; // Inicializamos la variable
 
+                    // Usar un switch tradicional para asignar el nombre del día
+                    switch (numero)
+                    {
+                        case 1:
+                            dia = "Lunes";
+                            break;
+                        case 2:
+                            dia = "Martes";
+                            break;
+                        case 3:
+                            dia = "Miércoles";
+                            break;
+                        case 4:
+                            dia = "Jueves";
+                            break;
+                        case 5:
+                            dia = "Viernes";
+                            break;
+                        case 6:
+                            dia = "Sábado";
+                            break;
+                        case 7:
+                            dia = "Domingo";
+                            break;
+                    }
 
                     txtResultado.Text = dia;
                 }
