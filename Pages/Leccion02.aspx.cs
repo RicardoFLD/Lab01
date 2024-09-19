@@ -47,7 +47,7 @@ namespace Lab01.Pages
             int numero;
 
             // Intentar convertir el valor del TextBox a entero
-            bool esNumeroValido = int.TryParse(txtDia.Text, out numero);
+            bool esNumeroValido = int.TryParse(txtNum3.Text, out numero);
 
             // Evaluar el número
             if (esNumeroValido)
