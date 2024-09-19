@@ -78,8 +78,6 @@ namespace Lab01.Pages
             }
         }
     }
-    
-    
 }
 
     
