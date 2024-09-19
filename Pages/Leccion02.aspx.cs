@@ -47,10 +47,8 @@ namespace Lab01.Pages
         {
             int numero;
 
-            // Intentar convertir el valor del TextBox a entero
             bool esNumeroValido = int.TryParse(txtNum3.Text, out numero);
 
-            // Evaluar el número
             if (esNumeroValido)
             {
                 if (numero < 1 || numero > 7)
@@ -59,7 +57,6 @@ namespace Lab01.Pages
                 }
                 else
                 {
-                    // Asignar el nombre del día según el número
                     string dia = numero switch
                     {
                         1 => "Lunes",
