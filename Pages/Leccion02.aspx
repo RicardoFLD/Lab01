@@ -54,7 +54,7 @@
             <asp:TextBox ID="txtResultado" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="BtnEval2" runat="server" Text="Evaluar numero" OnClick="Button1_Click" />
+            <asp:Button ID="btnEval2" runat="server" Text="Evaluar" OnClick="btnEval2_Click" />
             <br />
             <br />
         </div>

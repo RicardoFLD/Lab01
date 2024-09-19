@@ -79,7 +79,46 @@ namespace Lab01.Pages
                 txtResultado.Text = "Por favor, ingrese un número válido.";
             }
         }
+
+        protected void btnEval2_Click(object sender, EventArgs e)
+        {
+            int numero;
+
+            // Intentar convertir el valor del TextBox a entero
+            bool esNumeroValido = int.TryParse(txtNum3.Text, out numero);
+
+            // Evaluar el número
+            if (esNumeroValido)
+            {
+                if (numero < 1 || numero > 7)
+                {
+                    txtResultado.Text = "El número es incorrecto.";
+                }
+                else
+                {
+                    // Asignar el nombre del día según el número
+                    string dia = numero switch
+                    {
+                        1 => "Lunes",
+                        2 => "Martes",
+                        3 => "Miércoles",
+                        4 => "Jueves",
+                        5 => "Viernes",
+                        6 => "Sábado",
+                        7 => "Domingo",
+                        _ => ""
+                    };
+
+                    txtResultado.Text = dia;
+                }
+            }
+            else
+            {
+                txtResultado.Text = "Por favor, ingrese un número válido.";
+            }
+        }
     }
+    
     
 }
 

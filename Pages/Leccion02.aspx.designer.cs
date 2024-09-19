@@ -177,12 +177,12 @@ namespace Lab01.Pages
         protected global::System.Web.UI.WebControls.TextBox txtResultado;
 
         /// <summary>
-        /// Control BtnEval2.
+        /// Control btnEval2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEval2;
+        protected global::System.Web.UI.WebControls.Button btnEval2;
     }
 }
