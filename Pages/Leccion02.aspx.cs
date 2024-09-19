@@ -46,13 +46,10 @@ namespace Lab01.Pages
         protected void btnEval2_Click(object sender, EventArgs e)
         {
 
-            // Declarar variable para el número ingresado
             int numero;
 
-            // Intentar convertir el valor del TextBox a entero
             bool esNumeroValido = int.TryParse(txtNum3.Text, out numero);
 
-            // Evaluar el número
             if (esNumeroValido)
             {
                 if (numero < 1 || numero > 7)
@@ -61,9 +58,8 @@ namespace Lab01.Pages
                 }
                 else
                 {
-                    string dia = ""; // Inicializamos la variable
+                    string dia = ""; 
 
-                    // Usar un switch tradicional para asignar el nombre del día
                     switch (numero)
                     {
                         case 1:
